@@ -1,0 +1,67 @@
+// 
+// _table.scss
+// 
+
+.table {
+  th {
+      font-weight: $fw-medium;
+  }
+
+  td.buttons {
+
+    &.one-btn {
+      .btn {
+        width: 100%;
+      }
+    }
+
+    &.two-btn {
+      .btn {
+        width: 49%;
+
+        &:not(:first-child){
+          margin-left: 2%;
+        }
+      }
+    }
+
+    &.three-btn {
+      .btn {
+        width: 32%;
+
+        &:not(:first-child){
+          margin-left: 2%;
+        }
+      }
+    }
+
+  }
+
+  th,td{
+    vertical-align: middle;
+    padding: 0.4rem 0.5rem !important;
+    color: black;
+  }
+}
+
+//Table centered
+.table-centered {
+  td,th {
+      vertical-align: middle !important;
+  }
+}
+
+.table-nowrap {
+  th, td {
+    white-space: nowrap;
+  }
+}
+
+.table-bordered {
+  border: $table-border-width solid $table-border-color;
+
+  th,
+  td {
+    border: $table-border-width solid $table-border-color;
+  }
+}
